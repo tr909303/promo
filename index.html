@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header>
+    <header class="fixed-header">
       <nav>
         <a href="#home">Home</a>
         <a href="#promo">Music</a>
@@ -13,15 +13,15 @@
       </nav>
     </header>
     <main>
-      <section id="home">
+      <section id="home" class="center">
         <h1>Welcome to SYNTETICA TRAX RELEASES</h1>
-        <img src="label-logo.png" alt="Label Logo" id="label-logo">
+        <img src="logo.jpg" alt="Logo" class="logo">
+        <img src="album_art.jpg" alt="Album Art" class="album-art">
       </section>
       <section id="music">
         <h2>Music</h2>
         <ul>
           <li>
-            <img src="album-art.png" alt="Album Art" id="album-art">
             <h3>VA THE BEGINNING</h3>
             <audio src="Cardao - Rising from Ashes(Original Mix).mp3" controls></audio>
             <audio src="André Dias - track2 (Original Mix).mp3" controls></audio>
@@ -29,20 +29,28 @@
             <audio src="artist - track (Original Mix).mp3" controls></audio>
             <audio src="artist - track (Original Mix).mp3" controls></audio>
             <p>Leave a rating: 
+              <form>
+                <input type="radio" name="rating" value="1"> 1
+                <input type="radio" name="rating" value="2"> 2
+                <input type="radio" name="rating" value="3"> 3
+                <input type="radio" name="rating" value="4"> 4
+                <input type="radio" name="rating" value="5"> 5
+              </form>
             </p>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd2fKOtOkgY6ARCJaI3ofo5PBlzc1AdC3OwctotHvn1kUp41w/viewform?embedded=true" width="840" height="848" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+            <div class="center">
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd2fKOtOkgY6ARCJaI3ofo5PBlzc1AdC3OwctotHvn1kUp41w/viewform?embedded=true" width="840" height="848" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+            </div>
           </li>
         </ul>
       </section>
       <section id="about">
         <h2>About</h2>
         <p>Learn more about the artist and their music.</p>
-        <img src="artist-info.png" alt="Artist Info" id="artist-info">
       </section>
     </main>
     <footer>
-      <img src="footer-logo.png" alt="Footer Logo" id="footer-logo">
-      <p>Copyright ©2023 Syntetica Trax</p>
+      <p>Copyright ©2023 Techno Music Releases</p>
+      <img src="footer.jpg" alt="Footer" class="footer">
     </footer>
   </body>
-</html> 
+</html>
