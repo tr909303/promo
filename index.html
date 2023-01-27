@@ -15,15 +15,12 @@
     <main>
       <section id="home">
         <h1>Welcome to SYNTETICA TRAX RELEASES</h1>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd2fKOtOkgY6ARCJaI3ofo5PBlzc1AdC3OwctotHvn1kUp41w/viewform?embedded=true" width="640" height="648" frameborder="0" marginheight="0" marginwidth="0"></iframe>
       </section>
       <section id="music">
         <h2>Music</h2>
         <ul>
           <li>
-            <div class="album-art">
-              <img src="album-art.jpg" alt="Album art for VA THE BEGINNING">
-              <img src="label-logo.png" alt="Label logo">
-            </div>
             <h3>VA THE BEGINNING</h3>
             <audio src="Cardao - Rising from Ashes(Original Mix).mp3" controls></audio>
             <audio src="André Dias - track2 (Original Mix).mp3" controls></audio>
@@ -39,13 +36,11 @@
             <input type="radio" name="rating" value="5"> 5
             </form>
             </p>
-            <div class="feedback">
-              <form action="https://docs.google.com/forms/d/e/1FAIpQLSd2fKOtOkgY6ARCJaI3ofo5PBlzc1AdC3OwctotHvn1kUp41w/formResponse" method="post" target="_self" onsubmit="">
-                <label for="entry.1496324065">Leave feedback:</label>
-                <textarea id="entry.1496324065" name="entry.1496324065"></textarea>
-                <input type="submit" value="Send feedback">
-              </form>
-            </div>
+            <form action="send-feedback.php" method="post">
+              <label for="feedback">Leave feedback:</label>
+              <textarea id="feedback" name="feedback"></textarea>
+              <input type="submit" value="Send feedback">
+            </form>
           </li>
         </ul>
       </section>
