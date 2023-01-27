@@ -1,56 +1,104 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #333;
+    background-color: #333333;
     color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-}
-
-header a {
-    color: white;
-    text-decoration: none;
-    margin-right: 20px;
-}
-
-main {
-    margin-top: 80px;
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 20px;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
     text-align: center;
 }
 
-.album-art {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+header {
+    background-color: #222222;
+    padding: 30px;
 }
 
-.label-logo {
-    width: 50px;
-    height: auto;
-    display: block;
-    margin: 20px auto;
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    color: #555555;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+section {
+    width: 90%;
+    padding: 40px;
+    background-color: #444444;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #222222;
+    text-align: left;
+    margin: 20px;
+}
+
+section#home {
+    align-self: flex-start;
+}
+
+section#music {
+    align-self: center;
+}
+
+section#about {
+    align-self: flex-end;
+}
+
+h1, h2, h3 {
+    color: #ffffff;
+    margin: 0;
 }
 
 audio {
     width: 100%;
+}
+
+footer {
+    background-color: #222222;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer img {
+    max-height: 50px;
+    vertical-align: middle;
+}
+
+footer p {
+    color: white;
+    margin: 0;
+}
+
+#album-info {
+    max-width: 300px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#album-info img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+form {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+input[type=radio] {
+    margin-right: 10px;
 }
