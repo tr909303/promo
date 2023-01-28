@@ -1,0 +1,72 @@
+/* Center the title */
+h1 {
+    text-align: center;
+    font-family: 'Pixeled', sans-serif;
+    color: white;
+}
+
+/* Center the "VA THE BEGINNING" text */
+h3 {
+    text-align: center;
+    font-family: 'Pixeled', sans-serif;
+    color: white;
+}
+
+/* Center the album cover art */
+.album-art-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Increase the size of the album cover art */
+img {
+    width: 250px;
+    height: 250px;
+}
+
+audio {
+    width: 20%; /* adjust as needed */
+}
+
+/* Add background image */
+body {
+    background-image: url(https://iili.io/H0sLnzN.md.png);
+    background-size: original;
+}
+
+/* footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+}
+
+#footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-section {
+    flex: 1;
+    text-align: center;
+    padding: 0 1em;
+}
+
+#social-media-icons a {
+    color: #fff;
+    font-size: 1.5em;
+    margin-right: 0.5em;
+}
+
+#copyright {
+    text-align: center;
+    font-size: 0.8em;
+    margin-top: 1em;
+}
+
+/* Smaller text for footer */
+.footer-section h3, .footer-section p, #copyright {
+    font-size: 0.8em;
+}
