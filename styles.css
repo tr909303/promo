@@ -103,3 +103,8 @@ iframe {
     display:block;
     margin:auto;
 }
+
+.album-art-container img {
+  width: 500px;
+  height: 500px;
+}
