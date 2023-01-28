@@ -1,63 +1,21 @@
 
-<!doctype html>
-<!--[if lte IE 9]>
-<html lang="en" class="oldie">
-<![endif]-->
-<!--[if gt IE 9]><!-->
-<html lang="en">
-<!--<![endif]-->
+<!DOCTYPE html>
+<html>
 <head>
-<meta charset="utf-8">
-<meta name='viewport' content='width=device-width, initial-scale=1'>
-<meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="bb/an+Ei4e+YX4Re/vtWxlU/JRVr/LaXpVN0chOKgDDgZi4SYxAKnWIt+ZEK++mvXUk/7NozZcQzwxxrf7zxtA==" />
-
-<title>CodePen - 3D Cube Media Player CSS only - Chrome</title>
-<link rel="stylesheet" media="screen" href="https://cpwebassets.codepen.io/assets/fullpage/fullpage-96f5da14bc71e5883d519b4eb5e93297dde552c2f91a97fcfb30035219cf1c1a.css" />
-<link rel="stylesheet" media="all" href="https://cpwebassets.codepen.io/assets/global/global-0b932d80445462f790a3461ec6768eb7290edbe769dd2e1c4efaedafa5582d5c.css" />
-<link rel="stylesheet" media="screen" href="https://cpwebassets.codepen.io/assets/packs/css/everypage-a2b6f6b1.css" />
-<link rel="stylesheet" media="all" href="https://cpwebassets.codepen.io/assets/page/page-345d2661188ccfb81d8d25dc1f6081b1116e59e3b4e5eb5955e430d5ac0b787a.css" />
-<link rel="stylesheet" media="all" href="https://cpwebassets.codepen.io/assets/editor/editor-f7fe2b17a4e996509b86608d7cd3f58f9c115715b6157070005c6e7df9ecf341.css" />
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@CodePen">
-<meta name="twitter:title" content="3D Cube Media Player CSS only - Chrome">
-<meta name="twitter:description" content="Based on this awesome Dribbble shot by Balraj Chana here https://dribbble.com/shots/3111352-C-U-B-3-D  Chrome only at this point. Sorry for the messy c...">
-<meta name="twitter:image" content="https://shots.codepen.io/jcoulterdesign/pen/EvQRRo-800.jpg?version=1520530603">
-<meta name="twitter:creator" content="@jamiecoulter89">
-<meta property="og:image" content="https://shots.codepen.io/jcoulterdesign/pen/EvQRRo-800.jpg?version=1520530603" itemprop="thumbnailUrl">
-<meta property="og:title" content="3D Cube Media Player CSS only - Chrome">
-<meta property="og:url" content="https://codepen.io/jcoulterdesign/details/EvQRRo">
-<meta property="og:site_name" content="CodePen">
-<meta property="og:description" content="Based on this awesome Dribbble shot by Balraj Chana here https://dribbble.com/shots/3111352-C-U-B-3-D  Chrome only at this point. Sorry for the messy c...">
-<link rel="alternate" type="application/json+oembed" href="https://codepen.io/api/oembed?url=https%3A%2F%2Fcodepen.io%2Fjcoulterdesign%2Fpen%2FEvQRRo&format=json" title="3D Cube Media Player CSS only - Chrome" />
-<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
-<meta name="apple-mobile-web-app-title" content="CodePen">
-<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
-<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
-<script nonce="OtIVrzzIHho=">
-  /* Firefox needs this to prevent FOUT */
-</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/2.0.0/wavesurfer.min.js"></script>
+  <script>
+    var wavesurfer = WaveSurfer.create({
+      container: '#waveform',
+      waveColor: 'violet',
+      progressColor: 'purple'
+    });
+    wavesurfer.load('audiofile.mp3');
+  </script>
 </head>
-<body class="fullpage logged-out sidebar-false">
-<header id="main-header" class="main-header"></header>
-<div class="oldie-header">
-<a href="https://codepen.io/jcoulterdesign/pen/EvQRRo?anon=true&amp;view=pen">Edit Pen</a>
-</div>
-<div id="result-iframe-wrap" role="main">
-<iframe id="result" src="https://cdpn.io/jcoulterdesign/fullpage/EvQRRo?anon=true&amp;view=fullpage" sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation allow-downloads allow-presentation" allow="accelerometer; camera; encrypted-media; display-capture; geolocation; gyroscope; microphone; midi; clipboard-read; clipboard-write; web-share" allowTransparency="true" allowpaymentrequest="true" allowfullscreen="true" class="result-iframe" loading="lazy"></iframe>
-</div>
-<div id="full-view-ad"></div>
-<textarea id="init-data" style="display:none">{&quot;__browser&quot;:{&quot;device&quot;:&quot;unknown_device&quot;,&quot;mobile&quot;:false,&quot;name&quot;:&quot;chrome&quot;,&quot;platform&quot;:&quot;mac&quot;,&quot;version&quot;:&quot;109&quot;},&quot;__constants&quot;:{},&quot;__CPDATA&quot;:{&quot;domain_iframe&quot;:&quot;https://cdpn.io&quot;,&quot;environment&quot;:&quot;production&quot;,&quot;host&quot;:&quot;codepen.io&quot;,&quot;iframe_allow&quot;:&quot;accelerometer; camera; encrypted-media; display-capture; geolocation; gyroscope; microphone; midi; clipboard-read; clipboard-write; web-share&quot;,&quot;iframe_sandbox&quot;:&quot;allow-forms allow-modals allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation allow-downloads allow-presentation&quot;},&quot;__graphql&quot;:{&quot;data&quot;:{&quot;data&quot;:{&quot;sessionUser&quot;:{&quot;id&quot;:&quot;VoDkNZ&quot;,&quot;name&quot;:&quot;Captain Anonymous&quot;,&quot;title&quot;:&quot;Captain Anonymous&quot;,&quot;avatar&quot;:&quot;https://assets.codepen.io/t-1/user-default-avatar.jpg?format=auto&amp;version=0&quot;,&quot;currentContext&quot;:{&quot;id&quot;:&quot;VoDkNZ&quot;,&quot;title&quot;:&quot;Captain Anonymous&quot;,&quot;name&quot;:&quot;Captain Anonymous&quot;,&quot;avatar&quot;:&quot;https://assets.codepen.io/t-1/user-default-avatar.jpg?format=auto&amp;version=0&quot;,&quot;username&quot;:&quot;anon&quot;,&quot;__typename&quot;:&quot;User&quot;},&quot;currentTeamId&quot;:null,&quot;username&quot;:&quot;anon&quot;,&quot;admin&quot;:false,&quot;anon&quot;:true,&quot;pro&quot;:false,&quot;verified&quot;:false,&quot;teams&quot;:[],&quot;__typename&quot;:&quot;User&quot;}}},&quot;url&quot;:&quot;https://codepen.io/graphql&quot;,&quot;api&quot;:&quot;cprails&quot;,&quot;cpedata&quot;:{&quot;action&quot;:&quot;show_secure_full_page&quot;,&quot;controller&quot;:&quot;fullpage&quot;}},&quot;__user&quot;:{&quot;anon&quot;:true,&quot;base_url&quot;:&quot;/anon/&quot;,&quot;current_team_id&quot;:0,&quot;current_team_hashid&quot;:null,&quot;hashid&quot;:&quot;VoDkNZ&quot;,&quot;id&quot;:1,&quot;itemType&quot;:&quot;user&quot;,&quot;name&quot;:&quot;Captain Anonymous&quot;,&quot;paid&quot;:false,&quot;tier&quot;:0,&quot;username&quot;:&quot;anon&quot;,&quot;created_at&quot;:null,&quot;email_verified&quot;:null,&quot;collections_count&quot;:0,&quot;collections_private_count&quot;:0,&quot;followers_count&quot;:0,&quot;followings_count&quot;:0,&quot;pens_count&quot;:0,&quot;pens_private_count&quot;:0,&quot;projects_count&quot;:0,&quot;projects_private_count&quot;:0},&quot;__firebase&quot;:{&quot;config&quot;:{&quot;apiKey&quot;:&quot;AIzaSyBgLAe7N_MdFpuVofMkcQLGwwhUu5tuxls&quot;,&quot;authDomain&quot;:&quot;codepen-store-production.firebaseapp.com&quot;,&quot;databaseURL&quot;:&quot;https://codepen-store-production.firebaseio.com&quot;,&quot;disabled&quot;:false,&quot;projectId&quot;:&quot;codepen-store-production&quot;},&quot;token&quot;:&quot;eyJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJodHRwczovL2lkZW50aXR5dG9vbGtpdC5nb29nbGVhcGlzLmNvbS9nb29nbGUuaWRlbnRpdHkuaWRlbnRpdHl0b29sa2l0LnYxLklkZW50aXR5VG9vbGtpdCIsImNsYWltcyI6eyJvd25lcklkIjoiVm9Ea05aIiwiYWRtaW4iOmZhbHNlfSwiZXhwIjoxNjc0ODcwOTc4LCJpYXQiOjE2NzQ4NjczNzgsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLThva3lsQGNvZGVwZW4tc3RvcmUtcHJvZHVjdGlvbi5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsInN1YiI6ImZpcmViYXNlLWFkbWluc2RrLThva3lsQGNvZGVwZW4tc3RvcmUtcHJvZHVjdGlvbi5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsInVpZCI6IlZvRGtOWiJ9.aDsH6wsBAcGNMBwQJvKwNPzJQixGwp17zo_NQYmiRqOR0-rO7sntP4eAJ2rzrMXfFuP3xorCLtll0CHQxCBp-vhON97EbPkSP86mIGAtFzCKkBm8OHJNtpwb6AIOHbvWmcGJ7_MLxzskYqyRXKptnCAj2shk8Q9VDQJfm6rH5IjEiJmwIIFi2PyGbEhMIh8XTH796tjk5HVpPrTnbCI-2AUvQDfU3eaicKqBXGP_-lyocaFF1T6PPsyhCCP5nHAPNCwlztl78Ps6en7v-6IfqRZPblNz78KeCxr6dpf_sJZ1bCY75dJfB2lA7S-xBoBG-hYnEKO0Sg8MlL6ZH9rIzw&quot;},&quot;__pay_stripe_public_key&quot;:&quot;pk_live_2GndomDfiklqpSNQn8FrGuwZSMIMzha7DkLJqlYe7IR0ihKAlKdiHg68JJc5eVPt68rzAjzAAVXcUwjySHRCsgjQQ00gtRBUFNH&quot;,&quot;__pay_braintree_env&quot;:&quot;production&quot;,&quot;__item&quot;:&quot;{\&quot;id\&quot;:17273339,\&quot;hashid\&quot;:\&quot;EvQRRo\&quot;,\&quot;itemType\&quot;:\&quot;pen\&quot;,\&quot;user_id\&quot;:217233,\&quot;slug_hash\&quot;:\&quot;EvQRRo\&quot;,\&quot;private\&quot;:false,\&quot;slug_hash_private\&quot;:\&quot;4a69ccce1eea35dd02cf4d3d5ea8e8a9\&quot;}&quot;,&quot;__profiled&quot;:{&quot;base_url&quot;:&quot;/jcoulterdesign&quot;,&quot;hashid&quot;:&quot;ZzqGEX&quot;,&quot;id&quot;:217233,&quot;name&quot;:&quot;Jamie Coulter&quot;,&quot;type&quot;:&quot;user&quot;,&quot;username&quot;:&quot;jcoulterdesign&quot;},&quot;__pageType&quot;:&quot;full&quot;}</textarea>
-<div id="popup-overlay" class="overlay popup-overlay"></div>
-<div id="modal-overlay" class="overlay modal-overlay"></div>
-<script src="https://cpwebassets.codepen.io/assets/common/everypage-b1fe1ca71dab80c49b8e5ebed21506a80cb6fe64ecaa8c6dddae5aca7b1e34d7.js"></script>
-<script src="https://cpwebassets.codepen.io/assets/common/analytics_and_notifications-dabea89133f3a919e973a927aebbc27318967ac159bc8c7b657d656880822e14.js"></script>
-<script src="https://cpwebassets.codepen.io/assets/packs/js/vendor-9afe5fd4be6eb82cff09.chunk.js"></script>
-<script src="https://cpwebassets.codepen.io/assets/packs/js/1-b89b0831872075f3a195.chunk.js"></script>
-<script src="https://cpwebassets.codepen.io/assets/packs/js/referrer-tracking-13b13a350d1dec45ead2.js"></script>
-<script src="https://cpwebassets.codepen.io/assets/packs/js/vendor-9afe5fd4be6eb82cff09.chunk.js"></script>
-<script src="https://cpwebassets.codepen.io/assets/packs/js/1-b89b0831872075f3a195.chunk.js"></script>
-<script src="https://cpwebassets.codepen.io/assets/packs/js/everypage-8dbd124c070e64067c44.js"></script>
-<script src="https://cpwebassets.codepen.io/assets/editor/full/full_page_renderer-74c0df88dc71f0228dc09f732aac0a6e7dd92c69e877b8cfa0e1299480c7fb9e.js"></script>
+<body>
+  <div id="waveform"></div>
+  <audio controls>
+    <source src="audiofile.mp3" type="audio/mpeg">
+  </audio>
 </body>
 </html>
