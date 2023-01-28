@@ -1,52 +1,57 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Syntetica Trax Releases</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#music">Music</a>
-        <a href="#about">About</a>
-      </nav>
-    </header>
-    <main>
-      <section id="home">
-        <h1>Welcome to SYNTETICA TRAX RELEASES</h1>
-      </section>
-      <section id="music">
-        <h2>Music</h2>
-        <ul>
-          <li>
-            <h3>VA THE BEGINNING</h3>
-            <audio src="Cardao - Rising from Ashes(Original Mix).mp3" controls></audio>
-            <audio src="André Dias - track2 (Original Mix).mp3" controls></audio>
-            <audio src="artist - track (Original Mix).mp3" controls></audio>
-            <audio src="artist - track (Original Mix).mp3" controls></audio>
-            <audio src="artist - track (Original Mix).mp3" controls></audio>
-            <p>Leave a rating: 
-            <form>
-            <input type="radio" name="rating" value="1"> 1
-            <input type="radio" name="rating" value="2"> 2
-            <input type="radio" name="rating" value="3"> 3
-            <input type="radio" name="rating" value="4"> 4
-            <input type="radio" name="rating" value="5"> 5
-            </form>
-            </p>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd2fKOtOkgY6ARCJaI3ofo5PBlzc1AdC3OwctotHvn1kUp41w/viewform?embedded=true" width="840" height="848" frameborder="0" marginheight="0" marginwidth="0"></iframe>
-            </form>
-          </li>
-        </ul>
-      </section>
-      <section id="about">
-        <h2>About</h2>
-        <p>Learn more about the artist and their music.</p>
-      </section>
-    </main>
-    <footer>
-      <p>Copyright ©2023 Techno Music Releases</p>
-    </footer>
-  </body>
-</html> 
+<html lang="en">
+<head>
+  <title>Simple Music Player</title>
+  <!-- Load FontAwesome icons -->
+  <link rel="stylesheet"
+        href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+ 
+  <!-- Load the custom CSS style file -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="player">
+ 
+    <!-- Define the section for displaying details -->
+    <div class="details">
+      <div class="now-playing">PLAYING x OF y</div>
+      <div class="track-art"></div>
+      <div class="track-name">Track Name</div>
+      <div class="track-artist">Track Artist</div>
+    </div>
+ 
+    <!-- Define the section for displaying track buttons -->
+    <div class="buttons">
+      <div class="prev-track" onclick="prevTrack()">
+        <i class="fa fa-step-backward fa-2x"></i>
+      </div>
+      <div class="playpause-track" onclick="playpauseTrack()">
+        <i class="fa fa-play-circle fa-5x"></i>
+      </div>
+      <div class="next-track" onclick="nextTrack()">
+        <i class="fa fa-step-forward fa-2x"></i>
+      </div>
+    </div>
+ 
+    <!-- Define the section for displaying the seek slider-->
+    <div class="slider_container">
+      <div class="current-time">00:00</div>
+      <input type="range" min="1" max="100"
+        value="0" class="seek_slider" onchange="seekTo()">
+      <div class="total-duration">00:00</div>
+    </div>
+ 
+    <!-- Define the section for displaying the volume slider-->
+    <div class="slider_container">
+      <i class="fa fa-volume-down"></i>
+      <input type="range" min="1" max="100"
+        value="99" class="volume_slider" onchange="setVolume()">
+      <i class="fa fa-volume-up"></i>
+    </div>
+  </div>
+ 
+  <!-- Load the main script for the player -->
+  <script src="main.js"></script>
+</body>
+</html>
