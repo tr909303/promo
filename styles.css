@@ -1,3 +1,12 @@
+/* Center align all elements in a column */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
 /* Center the title */
 h1 {
     text-align: center;
@@ -17,7 +26,6 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
 }
 
 /* Increase the size of the album cover art */
@@ -26,16 +34,24 @@ img {
     height: 250px;
 }
 
-audio {
-    width: 20%; /* adjust as needed */
-    position: absolute;
-    right: 0;
-    top: 0;
+.audio-container {
+    display: flex;
+    justify-content: center;
+	
 }
+
+
+audio {
+    width: 30%; /* adjust as needed */
+    display: block;
+}
+
+
+
 
 /* Add background image */
 body {
-    background-image: url(https://iili.io/H0sLnzN.md.png);
+    background-image: url(https://iili.io/H0sLnzN.png);
     background-size: original;
 }
 
