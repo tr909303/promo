@@ -1,1 +1,21 @@
+header, footer {
+  position: fixed;
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  z-index: 1; /* added this to make sure the header and footer are always on top of other elements */
+}
+header h1 {
+  margin: 0;
+  font-size:20px; /* added this to adjust the font size of the header text */
+}
+footer p {
+  margin: 0;
+  font-size:15px; /* added this to adjust the font size of the footer text */
+}
+body {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 
