@@ -1,105 +1,140 @@
 body {
-  background-color: #1c1c1c;
-  color: white;
-  font-family: 'Arial', sans-serif;
+background-color: lightgreen;
+
+/* Smoothly transition the background color */
+transition: background-color .5s;
 }
 
-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #1c1c1c;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  z-index: 1;
+/* Using flex with the column direction to
+align items in a vertical direction */
+.player {
+height: 95vh;
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
 }
 
-header a {
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-  margin-right: 10px;
+.details {
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+margin-top: 25px;
 }
 
-nav {
-  display: flex;
+.track-art {
+margin: 25px;
+height: 250px;
+width: 250px;
+background-image: URL(
+	"https://source.unsplash.com/Qrspubmx6kE/640x360");
+background-size: cover;
+background-position: center;
+border-radius: 15%;
 }
 
-main {
-  margin-top: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+/* Changing the font sizes to suitable ones */
+.now-playing {
+font-size: 1rem;
 }
 
-section {
-  width: 80%;
-  margin: 0 auto;
+.track-name {
+font-size: 3rem;
 }
 
-section#music {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.track-artist {
+font-size: 1.5rem;
 }
 
-section#music h2 {
-  margin-bottom: 20px;
+/* Using flex with the row direction to
+align items in a horizontal direction */
+.buttons {
+display: flex;
+flex-direction: row;
+align-items: center;
 }
 
-section#music li {
-  width: 30%;
-  margin-bottom: 20px;
+.playpause-track,
+.prev-track,
+.next-track {
+padding: 25px;
+opacity: 0.8;
+
+/* Smoothly transition the opacity */
+transition: opacity .2s;
 }
 
-section#about {
-  text-align: center;
+/* Change the opacity when mouse is hovered */
+.playpause-track:hover,
+.prev-track:hover,
+.next-track:hover {
+opacity: 1.0;
 }
 
-footer {
-  background-color: #1c1c1c;
-  color: white;
-  padding: 10px;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+/* Define the slider width so that it scales properly */
+.slider_container {
+width: 75%;
+max-width: 400px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
-.player-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-gap: 10px;
-  width: 80%;
-  margin: 0 auto;
+/* Modify the appearance of the slider */
+.seek_slider, .volume_slider {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+height: 5px;
+background: black;
+opacity: 0.7;
+-webkit-transition: .2s;
+transition: opacity .2s;
 }
 
-.player-container audio {
-  width: 100%;
-  border: 2px solid white;
-  border-radius: 10px;
-  padding: 10px;
-  margin-bottom: 20px;
+/* Modify the appearance of the slider thumb */
+.seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+width: 15px;
+height: 15px;
+background: white;
+cursor: pointer;
+border-radius: 50%;
 }
 
-.player-container img {
-  width: 100%;
+/* Change the opacity when mouse is hovered */
+.seek_slider:hover,
+.volume_slider:hover {
+opacity: 1.0;
 }
 
-.player-container h3 {
-  text-align: center;
-  margin-bottom: 20px;
+.seek_slider {
+width: 60%;
 }
 
-.player-container form {
-  display: flex;
-  justify-content: center;
+.volume_slider {
+width: 30%;
 }
 
-.player-container form input[type="radio"] {
-  margin-right: 10px;
+.current-time,
+.total-duration {
+padding: 10px;
+}
+
+i.fa-volume-down,
+i.fa-volume-up {
+padding: 10px;
+}
+
+/* Change the mouse cursor to a pointer
+when hovered over */
+i.fa-play-circle,
+i.fa-pause-circle,
+i.fa-step-forward,
+i.fa-step-backward {
+cursor: pointer;
 }
