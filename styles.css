@@ -17,6 +17,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 /* Increase the size of the album cover art */
@@ -27,6 +28,9 @@ img {
 
 audio {
     width: 20%; /* adjust as needed */
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 /* Add background image */
